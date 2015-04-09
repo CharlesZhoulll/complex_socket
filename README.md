@@ -20,7 +20,7 @@ Install and Usage
 2. Run `sudo ./rawhttpget [website address]` to download web page. The filename would be exactly 
 the same as the file name in server. Default name “index.html” is used if there is no filename in server. 
 
-* Important Note 1: You must have root permission to run the program!
+* Important Note: You must have root permission to run the program!
 
 Dependencies (all included in the ./lib folder)
 ----------
