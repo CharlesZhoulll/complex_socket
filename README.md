@@ -1,6 +1,7 @@
-# Raw socket Get 
+# Welcome to Raw socket Get 
 
-[Project website](http://david.choffnes.com/classes/cs4700sp15/project4.php)
+* [Project website](http://david.choffnes.com/classes/cs4700sp15/project4.php)
+* [Project Documentation](http://charleszhoulll.github.io/complex_socket/)
 
 Introduction
 ---------------
@@ -20,6 +21,13 @@ Install and Usage
 the same as the file name in server. Default name “index.html” is used if there is no filename in server. 
 
 * Important Note: You must have root permission to run the program!
+
+Dependencies (all included in the ./lib folder)
+----------
+1. rocksaw-1.1.0.jar
+2. librocksaw.so
+
+Notice that this program only works in 64bit computer. If your computer is 32bit, you have to download [rocksaw library](https://www.savarese.org/software/rocksaw/) and recompile to generate the dependency 1 and 2.
 
 High level approach
 -------------------
