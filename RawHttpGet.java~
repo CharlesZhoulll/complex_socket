@@ -101,8 +101,6 @@ public class RawHttpGet
 			boolean responseChecked = false;
 			try
 			{
-				File pageFile = new File(serverURL.getFileName());
-				OutputStream out = new FileOutputStream(pageFile);
 				InputStream in = sendSocket.getInputStream();
 				byte[] buf = new byte[1024];
 				int len;
@@ -116,12 +114,12 @@ public class RawHttpGet
 						{
 							System.out.println("Cannot find page on this server, error code: "
 									+ respondCode);
-							pageFile.delete();
 							out.close();
 							return false;
 						}
 						else
 						{
+							OutputStream out = new FileOutputStream(new File(serverURL.getFileName()));
 							int splitOfHeader = str.indexOf("\r\n\r\n");
 							out.write(buf, splitOfHeader + 4, len - splitOfHeader - 4);
 							responseChecked = true;
@@ -222,7 +220,7 @@ public class RawHttpGet
 				return true;
 			}
 		}
-		catch (IOException e)
+		catch (IllegalStateException | IOException e)
 		{
 			return false;
 		}

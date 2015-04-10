@@ -1,3 +1,2 @@
 #!/bin/bash
-
 java -Djava.library.path=./lib -cp ./lib/rocksaw-1.1.0.jar: rawSocket.RawGet  $*
