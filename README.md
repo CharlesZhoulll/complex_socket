@@ -153,10 +153,6 @@ make sure that these bytes are in sequence.
 We using wireshark to see whether our program can correctly send duplicate ACK when receiving out of order 
 packet, or correctly close the connection after transmission is finished. 
 
-Teammate collaboration
-======================
-+ Fan Zhou: system design, code writing, debugging and documentation writing
-+ Ajay Kumar Dubey: debugging, testing, setting up environment to make sure program can run on various systems
 
 
 
